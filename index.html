@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Москва - Главная страница</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            background-image: url('Lib/moscow_background.jpg'); /* Фоновое изображение */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333; /* Цвет текста */
+            padding: 20px;
+            margin: 0;
+        }
+        h1, h2 {
+            color: #fff; /* Цвет заголовков */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Тень для выделения текста */
+        }
+        .flex-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .image {
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Тень для изображения */
+        }
+        .description {
+            background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+            padding: 20px;
+            border-radius: 10px; /* Скругляем углы фона */
+            text-align: left; /* Выравниваем текст по левому краю */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для блоков описания */
+        }
+        button {
+            background-color: #007BFF; /* Синий цвет */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            margin: 5px; /* Отступы между кнопками */
+            transition: background-color 0.3s; /* Плавный переход фона */
+        }
+        button:hover {
+            background-color: #0056b3; /* Темнее синий при наведении */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Москва</h1>
+    <h2>Столица России</h2>
+
+    <div class="flex-container">
+        <img class="image" src="Lib/moscow_image.jpg" alt="Москва" width="300"> <!-- Замените на ваше изображение -->
+        <div class="description">
+            <p>Москва — столица России и один из крупнейших мегаполисов мира. Она известна своим богатым историческим и культурным наследием, уникальной архитектурой и разнообразием жизни. Город был основан в 1147 году и с тех пор стал центром политической, экономической и культурной жизни страны.</p>
+        </div>
+    </div>
+
+    <button onclick="location.href='red_square.html'">Красная площадь</button>
+    <button onclick="location.href='cultural_life.html'">Культурная жизнь</button>
+
+</body>
+</html>
